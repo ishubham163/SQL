@@ -32,78 +32,60 @@ select* from my_table;
 select* from my_table2;
 
 --  #1
-Alter Table my_table
-Change Column name full_name varchar(100) not null;
+Alter Table my_table Change Column name full_name varchar(100) not null;
 
 -- #2
-Alter Table my_table
-Modify age Bigint not null;
+Alter Table my_table Modify age Bigint not null;
 
 -- #3
-Alter Table my_table
-ADD COLUMN email varchar(100) not null;
+Alter Table my_table ADD COLUMN email varchar(100) not null;
 
 -- #4
-Alter Table my_table
-ADD Column middle_name varchar(50) after full_name;
+Alter Table my_table ADD Column middle_name varchar(50) after full_name;
 
 -- #5
-Alter Table my_table
-ADD column EMP_Rank int first;
+Alter Table my_table ADD column EMP_Rank int first;
 
 -- #6
-Alter table my_table
-Modify created_at datetime ;
+Alter table my_table Modify created_at datetime ;
 
 -- #7
-Alter table my_table2
-Modify description text;
+Alter table my_table2 Modify description text;
 
 -- #8
-ALTER TABLE my_table
-MODIFY COLUMN full_name VARCHAR(255) NULL;
+ALTER TABLE my_table MODIFY COLUMN full_name VARCHAR(255) NULL;
 
 -- #9
-Alter Table my_table
-add primary key(id);
+Alter Table my_table add primary key(id);
 
 -- #10
-Alter Table my_table
-drop column middle_name;
+Alter Table my_table drop column middle_name;
 
 -- #11
-ALTER TABLE my_table
-RENAME COLUMN email TO email_add;
+ALTER TABLE my_table RENAME COLUMN email TO email_add;
 
 -- #12
-Alter table my_table
-Modify age int null;
+Alter table my_table Modify age int null;
 
 -- #13
-Alter Table my_table2
-add constraint fk_id
-Foreign key (id)
-References my_table(id);
+Alter Table my_table2 add constraint fk_id
+Foreign key (id) References my_table(id);
 
 -- #14
-Alter Table my_table2
-drop foreign key fk_id;
+Alter Table my_table2 drop foreign key fk_id;
 
 -- #15
 Alter table my_table
 modify full_name varchar(200) not null;
 
-
 -- #16
 Drop table my_table2;
 
 -- #18
-Alter table my_table
-drop primary key;
+Alter table my_table drop primary key;
 
 -- #19
-Alter table my_table
-drop column age;
+Alter table my_table drop column age;
 
 -- #20
 Drop Database ddl_commands;
